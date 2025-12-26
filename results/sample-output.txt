@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.2, pytest-7.4.4, pluggy-1.0.0 -- /home/feliciano/anaconda3/bin/python
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /home/feliciano/ncpa_tests/ncpa-artifact
+plugins: Faker-37.8.0, anyio-4.2.0, hypothesis-6.148.8
+collecting ... collected 12 items
+
+test_ncpa_properties.py::test_no_replay PASSED                           [  8%]
+test_ncpa_properties.py::test_no_skip PASSED                             [ 16%]
+test_ncpa_properties.py::test_wrong_node_rejected PASSED                 [ 25%]
+test_ncpa_properties.py::test_parallel_use_fails PASSED                  [ 33%]
+test_ncpa_properties.py::test_allocator_no_collision PASSED              [ 41%]
+test_ncpa_properties.py::test_allocator_exhaustion PASSED                [ 50%]
+test_ncpa_properties.py::test_strict_allocator_single_path PASSED        [ 58%]
+test_ncpa_properties.py::test_relaxed_allocator_two_paths PASSED         [ 66%]
+test_ncpa_properties.py::test_epoch_rollover_restores_capacity PASSED    [ 75%]
+test_ncpa_properties.py::test_old_epoch_path_rejected PASSED             [ 83%]
+test_ncpa_properties.py::test_byzantine_double_advance_fails PASSED      [ 91%]
+test_ncpa_properties.py::test_byzantine_epoch_confusion_fails PASSED     [100%]
+
+============================== 12 passed in 0.20s ==============================
